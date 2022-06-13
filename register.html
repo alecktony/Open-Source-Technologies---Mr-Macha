@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" class="favicon">
+</head>
+
+<body>
+
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="card registerCard">
+                        <div class="card-body">
+                            <form action="#" class="form-group registerForm" id="registerForm">
+                                <div class="form-floating m-2">
+                                    <input type="text" class="form-control" id="firstName"
+                                        placeholder="Enter First Name" />
+                                    <label for="firstName">Enter First Name</label>
+                                    <div class="error"></div>
+                                </div>
+                                <div class="form-floating m-2">
+                                    <input type="text" class="form-control" id="lastName"
+                                        placeholder="Enter Last Name" />
+                                    <label for="lastName">Enter Last Name</label>
+                                    <div class="error"></div>
+                                </div>
+                                <div class="form-floating m-2">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Email" />
+                                    <label for="email">Enter Email</label>
+                                    <div class="error"></div>
+                                </div>
+                                <!-- <div class="form-floating m-2">
+                                    <select name="genderSelect" id="genderSelect" class="form-select" placeholder="Select Gender">
+                                        <option value="" selected>Select Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                    <label for="genderSelect">Select Gender</label>
+                                </div> -->
+                                <div class="form-floating m-2">
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Enter Password" />
+                                    <label for="password">Enter Password</label>
+                                    <div class="error"></div>
+                                </div>
+                                <div class="form-floating m-2">
+                                    <input type="password" class="form-control" id="confirmPassword"
+                                        placeholder="Confirm Password">
+                                    <label for="confirmPassword">Confirm Password</label>
+                                    <div class="error"></div>
+                                </div>
+                                <hr class="py-2">
+                                <button type="submit" class="btn btn-outline-primary">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

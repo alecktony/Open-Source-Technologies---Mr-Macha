@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="../assets/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon" class="favicon">
+    <style>
+        input[type=text]:focus {
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-expand-md bg-primary sticky-top">
+        <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand"><img src="../assets/img/logo.jpg" alt="Logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContents">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContents">
+                <div class="navbar-nav text-white ms-auto">
+                    <a href="./index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link"></a>
+                    <a href="#" class="nav-link"></a>
+                    <a href="../login.html" class="nav-link">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-title post-title"></div>
+                    <div class="card-body post-description"></div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <!-- jQuery -->
+    <script src="../assets/jquery/jquery.min.js"></script>
+    <script>
+        let store = sessionStorage
+        const title = document.querySelector('.post-title')
+        const post = document.querySelector('.post-description')
+        title.innerText = store.getItem('title')
+        post.innerHTML = store.getItem('description')
+
+
+    </script>
+</body>
+
+</html>

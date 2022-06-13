@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" class="favicon">
+</head>
+
+<body>
+
+    <div class="contaniner mt-5">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-title">Login</div>
+                    <div class="card-body">
+                        <form action="" class="form-group" id="loginForm">
+                            <div class="form-floating m-2">
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" />
+                                <label for="firstName">Enter Username</label>
+                                <div class="error"></div>
+                            </div>
+                            <div class="form-floating m-2">
+                                <input type="password" class="form-control" id="password" placeholder="Enter Password" />
+                                <label for="password">Enter Password</label>
+                                <div class="error"></div>
+                            </div>
+                            <hr class="py-3">
+                            <button type="submit" class="btn btn-outline-primary">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
+
+    <script>
+        const loginForm = document.querySelector('#loginForm')
+
+        loginForm.addEventListener('submit', (val) => {
+            val.preventDefault()
+
+            const firstName = document.querySelector('#firstName')
+            const password = document.querySelector('#password')
+
+            let credentials = localStorage
+            const uname = credentials.getItem('username')
+            const pass = credentials.getItem('password')
+            if (firstName.value === '') {
+                alert('Username Field is Required')
+                firstName.focus()
+                return false
+            } else if (password.value === '') {
+                alert('Password Field is Required')
+                password.focus()
+                return false
+            } else if (firstName.value === uname && password.value === pass){
+                location.href = './admin/index.html'
+                return true
+            } else {
+                alert('Username or Password is incorrect')
+                return false
+            }
+            
+        })
+    </script>
+</body>
+
+</html>
