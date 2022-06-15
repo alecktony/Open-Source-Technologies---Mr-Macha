@@ -18,6 +18,24 @@
 #include "c.h"
 #include "auth.h"
 
+/************* LULU CHANGES HERE **********************NOTE NOTE NOTE**********/
+/**********
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+*****************/
+
 static int pam_fail_check(pam_handle_t *pamh, int retcode)
 {
 	if (retcode == PAM_SUCCESS)
