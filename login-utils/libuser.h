@@ -16,3 +16,5 @@ extern int set_value_libuser(const char *service_name, const char *username,
 			uid_t uid, const char *attr, const char *val);
 
 #endif /* UTIL_LINUX_LOGIN_LIBUSER_H */
+
+       // open source trial one
