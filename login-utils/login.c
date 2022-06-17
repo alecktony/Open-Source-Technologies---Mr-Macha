@@ -1,16 +1,4 @@
 /*
- * login(1)
- *
- * This program is derived from 4.3 BSD software and is subject to the
- * copyright notice below.
- *
- * Copyright (C) 2011 Karel Zak <kzak@redhat.com>
- * Rewritten to PAM-only version.
- *
-
- *
- * Copyright (c) 1980, 1987, 1988 The Regents of the University of California.
- * All rights reserved.
  *
  * Redistribution and use in source and binary forms are permitted
  * provided that the above copyright notice and this paragraph are
