@@ -1,4 +1,4 @@
 # Open-Source-Technologies--Mr-Macha
 For Tasks
-This repo is created so as to perform tasks regarding Open Source Technologies
-The University of Dodoma, Dodoma - Tanzania
+This Branch Contains Ubuntu 22.04 LTS Authentication Codes
+this branch is for learning purpose only.
