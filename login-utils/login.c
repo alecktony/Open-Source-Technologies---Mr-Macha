@@ -7,9 +7,7 @@
  * Copyright (C) 2011 Karel Zak <kzak@redhat.com>
  * Rewritten to PAM-only version.
  *
- * Michael Glad (glad@daimi.dk)
- * Computer Science Department, Aarhus University, Denmark
- * 1990-07-04
+
  *
  * Copyright (c) 1980, 1987, 1988 The Regents of the University of California.
  * All rights reserved.
